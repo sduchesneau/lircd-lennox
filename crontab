@@ -1,0 +1,10 @@
+# weekdays
+30 6 * * 1-5 irsend send_once lennox heat-on-21 # wakeup
+0 8 * * 1-5 irsend send_once lennox heat-on-17 # leave
+30 16 * * 1-5 irsend send_once lennox heat-on-21 # arrive
+30 20 * * 1-5 irsend send_once lennox heat-on-17 # sleep
+
+# weekend
+30 6 * * 6-7 irsend send_once lennox heat-on-21 # wakeup
+30 20 * * 6-7 irsend send_once lennox heat-on-17 # sleep
+
